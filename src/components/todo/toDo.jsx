@@ -13,6 +13,7 @@ class ToDo extends React.Component {
     }
     this.handleInput = this.handleInput.bind(this);
     this.addItem = this.addItem.bind(this);
+    this.deleteItem = this.deleteItem.bind(this);
   }
   
   handleInput(e){
@@ -38,6 +39,13 @@ class ToDo extends React.Component {
         }
       })
     }
+  }
+
+  deleteItem(key){
+    const filteredItems =  this.state.items.filter(item => item.key !== key)
+    this.setState({
+      items: filteredItems
+    })
   }
 
   render() {
