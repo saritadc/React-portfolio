@@ -1,4 +1,5 @@
 import React from 'react';
+import ListItems from '../list';
 
 class ToDo extends React.Component {
   constructor(props){
@@ -48,6 +49,7 @@ class ToDo extends React.Component {
           onChange={this.handleInput}/>
           <button type="submit">Add</button>
         </form>
+        <ListItems items={this.state.items} deleteItem ={this.deleteItem}></ListItems>
       </div>
     );
   }

@@ -68,7 +68,7 @@ p{
 #todo-form input::placeholder{
   color: rgba(255, 255, 255,0.5);
 }
-#todo-form input:focus, #todo-form button:focus{
+#todo-form input:focus, #todo-form button:focus, .deleteButton{
   outline: none;
 }
 #todo-form button{
@@ -77,6 +77,34 @@ p{
   border: 0;
   border-radius: 10px;
   background-color:rgb(42, 52, 71,0.6) ;
+  cursor: pointer;
+  font-weight: bolder;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.list{
+  color: white;
+  width: 370px;
+  background-color:#293241;
+  height: 50px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+.list p{
+  padding: 15px;
+  position: relative;
+  text-align: left;
+
+}
+.list p span{
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+.deleteButton{
+  border: 0;
+  background-color: #293241;
   cursor: pointer;
   font-weight: bolder;
   color: white;
