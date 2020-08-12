@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
-import Home from './components/home.jsx';
-import './App.css';
-import './assests/css/style.css';
+
+import './public';
+import Home from './components/home';
+import ToDo from './components/toDo';
+
+
 
 class App extends Component {
   render() {
     return (
-      <Home></Home>
+      <div>
+        <Home></Home>
+        <ToDo></ToDo>
+      </div>
     );
   }
 }
