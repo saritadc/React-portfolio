@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Profile_image } from '../images';
+import { Profile_image } from '../../images';
 
 
 
@@ -22,4 +22,4 @@ class Home extends React.Component {
 
 }
 
-export default Home
+export default Home;

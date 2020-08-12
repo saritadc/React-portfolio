@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './public';
 import Home from './components/home';
-import ToDo from './components/toDo';
+import ToDo from './components/todo';
 
 
 

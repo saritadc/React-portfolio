@@ -10,11 +10,11 @@ body {
    font-weight: 300;
 }
 .content{
-	background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.4);
 	color: white;
 	padding: 100px;
-	height: 500px;
-	width: 200px;
+	height: 400px;
+	width: 400px;
 	margin: 0 auto;
 	text-align: center;
 	
@@ -44,4 +44,42 @@ p{
 .fa{
   font-size: 40px;
   padding-right: 5px;
+}
+.todo-container{
+  width: 500px;
+  color: white;
+  padding: 50px;
+	margin: 0 auto;
+  text-align: center;
+  background-color: rgb(133, 158, 184,0.8);
+  min-height: 300px;
+}
+#todo-form input{
+  background-color:#3d5a80;
+  border: 0;
+  width: 250px;
+  height: 50px;
+  padding:0 20px;
+  margin: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+}
+#todo-form input::placeholder{
+  color: rgba(255, 255, 255,0.5);
+}
+#todo-form input:focus, #todo-form button:focus{
+  outline: none;
+}
+#todo-form button{
+  height: 50px;
+  width: 80px;
+  border: 0;
+  border-radius: 10px;
+  background-color:rgb(42, 52, 71,0.6) ;
+  cursor: pointer;
+  font-weight: bolder;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
 }
