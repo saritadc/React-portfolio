@@ -68,7 +68,7 @@ p{
 #todo-form input::placeholder{
   color: rgba(255, 255, 255,0.5);
 }
-#todo-form input:focus, #todo-form button:focus, .deleteButton{
+#todo-form input:focus, #todo-form button:focus,.list p input, .deleteButton{
   outline: none;
 }
 #todo-form button{
@@ -96,6 +96,12 @@ p{
   position: relative;
   text-align: left;
 
+}
+.list p input{
+  background-color: transparent;
+  color: white;
+  border: 0;
+  font-size: 18px;
 }
 .list p span{
   position: absolute;

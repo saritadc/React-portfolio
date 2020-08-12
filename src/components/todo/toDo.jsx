@@ -14,13 +14,14 @@ class ToDo extends React.Component {
     this.handleInput = this.handleInput.bind(this);
     this.addItem = this.addItem.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
+    this.setUpdate = this.setUpdate.bind(this);
   }
   
   handleInput(e){
     this.setState({
       currentItem:{
         text: e.target.value,
-        key: Date.now
+        key: Date.now()
       }
     })
   }
@@ -48,6 +49,18 @@ class ToDo extends React.Component {
     })
   }
 
+  setUpdate(text, key){
+    const items =  this.state.items;
+    items.map(item =>{
+      if(item.key === key){
+        item.text = text;
+        }
+      })
+      this.setState({
+        items: items
+      })
+    }
+
   render() {
     return (
       <div className="todo-container">
@@ -57,7 +70,7 @@ class ToDo extends React.Component {
           onChange={this.handleInput}/>
           <button type="submit">Add</button>
         </form>
-        <ListItems items={this.state.items} deleteItem ={this.deleteItem}></ListItems>
+        <ListItems items={this.state.items} deleteItem ={this.deleteItem} setUpdate={this.setUpdate}></ListItems>
       </div>
     );
   }
